@@ -1,0 +1,102 @@
+<div class="home-summary">
+    <div class="summary-row sumary-row-matches">
+        <div class="summary-row-column">
+            <div class="stats-item">
+                <ng2-odometer class="stats-item--total" [number]="statsData.matchs.matchsPlayed.total" [config]="{ }"></ng2-odometer>
+                <!-- <div class="stats-item--total">{{statsData.matchs.matchsPlayed.total}}</div> -->
+                
+                <div class="stats-item--bottom">
+                    <div class="stats-item--bottom__home"><fa-icon [icon]="faHome"></fa-icon> <span>{{statsData.matchs.matchsPlayed.home}}</span></div>
+                    <div class="stats-item--bottom__away"><fa-icon [icon]="faPlane"></fa-icon> <span>{{statsData.matchs.matchsPlayed.away}}</span></div>
+                </div>
+                <div class="stats-item--text">Played</div>
+            </div>
+        </div>
+        <div class="summary-row-column">
+            <div class="stats-item">
+                <!-- <div class="stats-item--total">{{statsData.matchs.wins.total}}</div> -->
+                <ng2-odometer class="stats-item--total" [number]="statsData.matchs.wins.total" [config]="{ }"></ng2-odometer>
+                
+                <div class="stats-item--bottom">
+                    <div class="stats-item--bottom__home"><fa-icon [icon]="faHome"></fa-icon> <span>{{statsData.matchs.wins.home}}</span></div>
+                    <div class="stats-item--bottom__away"><fa-icon [icon]="faPlane"></fa-icon> <span>{{statsData.matchs.wins.away}}</span></div>
+                </div>
+                <div class="stats-item--text">Won</div>
+            </div>
+        </div>
+        <div class="summary-row-column">
+            <div class="stats-item">
+                <!-- <div class="stats-item--total">{{statsData.matchs.draws.total}}</div> -->
+                <ng2-odometer class="stats-item--total" [number]="statsData.matchs.draws.total" [config]="{ }"></ng2-odometer>
+                
+                <div class="stats-item--bottom">
+                    <div class="stats-item--bottom__home"><fa-icon [icon]="faHome"></fa-icon> <span>{{statsData.matchs.draws.home}}</span></div>
+                    <div class="stats-item--bottom__away"><fa-icon [icon]="faPlane"></fa-icon> <span>{{statsData.matchs.draws.away}}</span></div>
+                </div>
+                <div class="stats-item--text">Drawn</div>
+            </div>
+        </div>
+        <div class="summary-row-column">
+            <div class="stats-item">
+                <!-- <div class="stats-item--total">{{statsData.matchs.loses.total}}</div> -->
+                <ng2-odometer class="stats-item--total" [number]="statsData.matchs.loses.total" [config]="{ }"></ng2-odometer>
+                
+                <div class="stats-item--bottom">
+                    <div class="stats-item--bottom__home"><fa-icon [icon]="faHome"></fa-icon> <span>{{statsData.matchs.loses.home}}</span></div>
+                    <div class="stats-item--bottom__away"><fa-icon [icon]="faPlane"></fa-icon> <span>{{statsData.matchs.loses.away}}</span></div>
+                </div>
+                <div class="stats-item--text">Lost</div>
+            </div>
+        </div>
+    </div>
+    <div class="summary-row sumary-row-goals">
+        <div class="summary-row-column">
+            <div class="stats-item">
+                <!-- <div class="stats-item--total">{{statsData.goals.goalsFor.total}}</div> -->
+                <ng2-odometer class="stats-item--total" [number]="statsData.goals.goalsFor.total" [config]="{ }"></ng2-odometer>
+                
+                <div class="stats-item--bottom">
+                    <div class="stats-item--bottom__home"> <fa-icon [icon]="faHome"></fa-icon> <span>{{statsData.goals.goalsFor.home}}</span></div>
+                    <div class="stats-item--bottom__away"><fa-icon [icon]="faPlane"></fa-icon> <span>{{statsData.goals.goalsFor.away}}</span></div>
+                </div>
+                <div class="stats-item--text">Scored</div>
+            </div>
+        </div>
+        <div class="summary-row-column">
+            <div class="stats-item">
+                <!-- <div class="stats-item--total">{{statsData.goals.goalsFor.total}}</div> -->
+                <ng2-odometer class="stats-item--total" [number]="statsData.goals.goalsAgainst.total" [config]="{ }"></ng2-odometer>
+                
+                <div class="stats-item--bottom">
+                    <div class="stats-item--bottom__home"><fa-icon [icon]="faHome"></fa-icon> <span>{{statsData.goals.goalsAgainst.home}}</span></div>
+                    <div class="stats-item--bottom__away"><fa-icon [icon]="faPlane"></fa-icon> <span>{{statsData.goals.goalsAgainst.away}}</span></div>
+                </div>
+                <div class="stats-item--text">Conceded</div>
+            </div>
+        </div>
+        <div class="summary-row-column">
+            <div class="stats-item">
+                <!-- <div class="stats-item--total">{{statsData.goalsAvg.goalsFor.total}}</div> -->
+                <ng2-odometer class="stats-item--total" [number]="statsData.goalsAvg.goalsFor.total" [config]="{ }"></ng2-odometer>
+                
+                <div class="stats-item--bottom">
+                    <div class="stats-item--bottom__home"><fa-icon [icon]="faHome"></fa-icon> <span>{{statsData.goalsAvg.goalsFor.home}}</span></div>
+                    <div class="stats-item--bottom__away"><fa-icon [icon]="faPlane"></fa-icon> <span>{{statsData.goalsAvg.goalsFor.away}}</span></div>
+                </div>
+                <div class="stats-item--text">Avg Scored</div>
+            </div>
+        </div>
+        <div class="summary-row-column">
+            <div class="stats-item">
+                <!-- <div class="stats-item--total">{{statsData.goalsAvg.goalsAgainst.total}}</div> -->
+                <ng2-odometer class="stats-item--total" [number]="statsData.goalsAvg.goalsAgainst.total" [config]="{ }"></ng2-odometer>
+                
+                <div class="stats-item--bottom">
+                    <div class="stats-item--bottom__home"><fa-icon [icon]="faHome"></fa-icon> <span>{{statsData.goalsAvg.goalsAgainst.home}}</span></div>
+                    <div class="stats-item--bottom__away"><fa-icon [icon]="faPlane"></fa-icon> <span>{{statsData.goalsAvg.goalsAgainst.away}}</span></div>
+                </div>
+                <div class="stats-item--text">Avg Conceded</div>
+            </div>
+        </div>
+    </div>
+</div>

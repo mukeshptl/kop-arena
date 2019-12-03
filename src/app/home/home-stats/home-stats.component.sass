@@ -1,0 +1,60 @@
+.summary-row
+    display: block
+    position: relative
+    width: 100%
+    box-sizing: border-box
+    height: 228.32px
+    
+    .summary-row-column
+        height: 100%
+        display: inline-block
+        width: 25%
+        text-align: center
+        color: #ffffff
+        background: linear-gradient(45deg, #c0392bc4, #0000004f)
+        
+        &:last-child
+            padding-right: 0
+            
+        .stats-item
+            display: block
+            
+            &--total
+                font-size: 50px
+                line-height: 2.5
+                font-weight: lighter
+                
+            &--text
+                margin: 30px auto
+                font-family: 'Sulphur Point', sans-serif
+                font-size: 16px
+                padding: 10px 0
+                border-top: 0.5px solid #ffffff96
+                
+            &--bottom
+            
+                &__home, &__away
+                    display: inline-block
+                    width: 50%
+                    margin: 5px auto
+                    box-sizing: border-box
+                    
+                    & span
+                        margin-left: 10px
+                        font-size: 18px
+                    
+                &__home
+                    padding-right: 15px
+                    text-align: right
+                    
+                &__away
+                    padding-left: 15px
+                    text-align: left
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-value, 
+.odometer.odometer-theme-default .odometer-digit .odometer-value
+    background: -webkit-linear-gradient(#eee, #333)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    font-weight: 400
+            
