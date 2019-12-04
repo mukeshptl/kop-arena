@@ -96,3 +96,50 @@
 //     &:last-child
 //         float: right
 //         margin-right: 0
+
+
+.fixture-summary
+    display: block
+    height: 228.32px
+    box-sizing: border-box
+    
+    
+    &--teams
+        display: inline-block
+        position: relative
+        width: 60%
+        clip-path: polygon(0 0, 100% 0, 83% 100%, 0% 100%)
+        height: calc(228.32px - 50px)
+        background: linear-gradient(45deg, #c12717, #d6cdcd7a)
+        padding-top: 50px
+        
+        & > *
+          display: inline-block
+          color: #ffffff
+          font-family: "Sulphur Point", sans-serif
+        
+        &__away
+        
+        &__home
+        
+        &__team
+          width: 33%
+          text-align: center
+          
+          .logo
+            width: 80px
+            
+          .name
+        
+        .vs-devider
+          margin: 10px
+          height: 80px
+          width: 80px
+          text-align: center
+          line-height: 80px
+          transform: translateY(-50%)
+          background: #7d251d6e
+          border-radius: 50%
+    
+    &--details
+    
