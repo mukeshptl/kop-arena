@@ -11,8 +11,10 @@
         </div>
     </div>
     <div class="fixture-summary--details">
-        <ul>
-            
-        </ul>
+        <div *ngFor="let event of events">
+            <div *ngIf="event.type === 'Goal'" class="event-item">
+                <span class="event-item--time">{{event.elapsed}}' </span> - <span class="event-item--player">{{event.player}} ({{event.teamName}})</span> 
+            </div> 
+        </div>
     </div>
 </div>

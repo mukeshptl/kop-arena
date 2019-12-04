@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Alatsi|Sulphur+Point&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400&display=swap')
 @mixin clearfix() 
   &::after 
     display: block
@@ -142,4 +143,23 @@
           border-radius: 50%
     
     &--details
-    
+      display: inline-block
+      width: 39%
+      height: 228.32px
+      overflow-x: scroll
+      position: absolute
+      right: 0
+      color: #fff
+      text-transform: capitalize
+      padding-top: 20px
+      
+      .event-item
+        padding: 5px 10px
+        font-size: 15px
+        font-family: 'Quicksand', sans-serif
+        font-weight: 100
+        
+        &--time
+          font-weight: 800
+          font-size: 16px
+        
