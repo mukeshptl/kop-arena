@@ -14,7 +14,7 @@ export class HomeNextFixtureComponent implements OnInit {
   faMapMarkerAlt = faMapMarkerAlt;
   
   nextFixture =  {
-    "fixture_id": 157164,
+    "fixture_id": 157165,
     "league_id": 524,
     "league": {
         "name": "Premier League",
@@ -22,25 +22,25 @@ export class HomeNextFixtureComponent implements OnInit {
         "logo": "https://media.api-football.com/leagues/2.png",
         "flag": "https://media.api-football.com/flags/gb.svg"
     },
-    "event_date": "2019-12-04T20:15:00+00:00",
-    "event_timestamp": 1575490500,
+    "event_date": "2019-12-07T15:00:00+00:00",
+    "event_timestamp": 1575730800,
     "firstHalfStart": null,
     "secondHalfStart": null,
-    "round": "Regular Season - 15",
+    "round": "Regular Season - 16",
     "status": "Not Started",
     "statusShort": "NS",
     "elapsed": 0,
-    "venue": "Anfield (Liverpool)",
+    "venue": "Vitality Stadium (Bournemouth, Dorset)",
     "referee": null,
     "homeTeam": {
+        "team_id": 35,
+        "team_name": "Bournemouth",
+        "logo": "https://media.api-football.com/teams/35.png"
+    },
+    "awayTeam": {
         "team_id": 40,
         "team_name": "Liverpool",
         "logo": "https://media.api-football.com/teams/40.png"
-    },
-    "awayTeam": {
-        "team_id": 45,
-        "team_name": "Everton",
-        "logo": "https://media.api-football.com/teams/45.png"
     },
     "goalsHomeTeam": null,
     "goalsAwayTeam": null,

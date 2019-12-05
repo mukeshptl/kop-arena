@@ -1,6 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Alatsi|Sulphur+Point&display=swap')
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400&display=swap')
 @mixin clearfix() 
   &::after 
     display: block
@@ -103,7 +101,7 @@
     display: block
     height: 228.32px
     box-sizing: border-box
-    
+  
     
     &--teams
         display: inline-block
@@ -118,6 +116,25 @@
           display: inline-block
           color: #ffffff
           font-family: "Sulphur Point", sans-serif
+        
+        &__heading
+          position: absolute
+          top: 0
+          padding: 8px 5px 0 20px
+          width: 100%
+          // box-shadow: 2px 2px 6px #3c2525
+          font-size: 14px
+          font-family: "Alatsi", sans-serif
+          font-weight: 300
+          
+          &::after
+            content: ""
+            width: 100%
+            background: #c0392b
+            box-shadow: 0px 0px 2px #00000052
+            height: 3px
+            display: block
+            margin-top: 10px
         
         &__away
         
@@ -142,14 +159,14 @@
           text-align: center
           line-height: 80px
           transform: translateY(-90%)
-          background: #7d251d6e
+          background: #b32212
           border-radius: 50%
           box-shadow: inset 0px 0px 5px #ded2c7
     
     &--details
       display: inline-block
       width: 39%
-      height: 228.32px
+      height: 208.32px
       overflow-x: scroll
       position: absolute
       right: 0
@@ -163,14 +180,14 @@
       
       .event-item
         padding: 5px 10px
-        font-size: 15px
+        font-size: 13px
         font-family: 'Quicksand', sans-serif
         font-weight: 100
         
         &--time
           font-weight: 800
-          font-size: 16px
+          font-size: 14px
         
         &--player
           margin-left: 10px
-        
+          line-height: 1.8

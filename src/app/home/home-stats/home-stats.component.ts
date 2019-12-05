@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HomeService } from 'src/app/services/home.service';
-import { faCoffee, faHome, faPlane } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee, faHome, faPlaneDeparture } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home-stats',
@@ -59,7 +59,7 @@ export class HomeStatsComponent implements OnInit {
 };
   faCoffee = faCoffee;
   faHome = faHome;
-  faPlane = faPlane;
+  faPlane = faPlaneDeparture;
   
   constructor(private homeService: HomeService) { }
 
