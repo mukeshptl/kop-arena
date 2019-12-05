@@ -11,6 +11,18 @@
         </div>
     </div>
     <div class="fixture-summary--details">
-        
+        <div>
+            <div class="event-item event-image">
+                <span class="event-item--time">
+                    <img src="{{nextFixture.league.logo}}" alt="{{nextFixture.league.name}}" height="60">
+                </span>
+            </div>
+            <div class="event-item">
+                <span class="event-item--time"><fa-icon [icon]="faCalendarDay"></fa-icon></span> <span class="event-item--player">  {{convertTsToDate(nextFixture.event_timestamp)}}</span>
+            </div>
+            <div class="event-item">
+                <span class="event-item--time"><fa-icon [icon]="faMapMarkerAlt"></fa-icon></span> <span class="event-item--player">  {{nextFixture.venue}}</span>
+            </div>
+        </div>
     </div>
 </div>

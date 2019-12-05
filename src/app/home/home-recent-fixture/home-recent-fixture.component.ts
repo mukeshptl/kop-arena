@@ -183,5 +183,9 @@ export class HomeRecentFixtureComponent implements OnInit {
     // );
     
   }
+  
+  formatScore(score: string) {
+    return score.replace(/-/g, ' - ');
+  }
 
 }

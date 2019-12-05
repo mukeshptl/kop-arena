@@ -4,7 +4,7 @@
             <img src="{{recentFixture.homeTeam.logo}}" alt="{{recentFixture.homeTeam.team_name}}" srcset="" class="logo">
             <p class="name">{{recentFixture.homeTeam.team_name}}</p>
         </div>
-        <div class="vs-devider">{{recentFixture.score.fulltime}}</div>
+        <div class="vs-devider">{{formatScore(recentFixture.score.fulltime)}}</div>
         <div class="fixture-summary--teams__away fixture-summary--teams__team">
             <img src="{{recentFixture.awayTeam.logo}}" alt="{{recentFixture.awayTeam.team_name}}" srcset="" class="logo">
             <p class="name">{{recentFixture.awayTeam.team_name}}</p>

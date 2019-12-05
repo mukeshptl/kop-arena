@@ -1,13 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { HomeService } from 'src/app/services/home.service';
-
+import { faCalendarDay, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+ 
 @Component({
   selector: 'app-home-next-fixture',
   templateUrl: './home-next-fixture.component.html',
   styleUrls: ['./home-next-fixture.component.sass']
 })
 export class HomeNextFixtureComponent implements OnInit {
-  nextFixture = {
+  
+  // nextFixtureChanged = new Subject<any>();
+  faCalendarDay = faCalendarDay;
+  faMapMarkerAlt = faMapMarkerAlt;
+  
+  nextFixture =  {
     "fixture_id": 157164,
     "league_id": 524,
     "league": {
@@ -50,7 +56,6 @@ export class HomeNextFixtureComponent implements OnInit {
   constructor(private homeService: HomeService) { }
 
   ngOnInit() {
-    
     // this.homeService.getCurrentFixture().subscribe(
     //   curFixture => {
     //     this.homeService.getFixtures().subscribe(
@@ -66,6 +71,17 @@ export class HomeNextFixtureComponent implements OnInit {
     //     );
     //   }
     // );
+  }
+  
+  convertTsToDate(ts: number) {
+    let date = new Date(ts * 1000); 
+    const day = date.getDate();
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    
+    return day + '/' + month + '/' + year + ' ' + hours + ':' + minutes;
   }
 
 }
