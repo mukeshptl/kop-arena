@@ -28,6 +28,7 @@ import { HomeStatsComponent } from './home/home-stats/home-stats.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeRecentFixtureComponent } from './home/home-recent-fixture/home-recent-fixture.component';
 import { HomeNextFixtureComponent } from './home/home-next-fixture/home-next-fixture.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { HomeNextFixtureComponent } from './home/home-next-fixture/home-next-fix
     VideosComponent,
     HomeStatsComponent,
     HomeRecentFixtureComponent,
-    HomeNextFixtureComponent
+    HomeNextFixtureComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
